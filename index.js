@@ -4,9 +4,9 @@ import cors from 'cors';
 import categoryRouter from './routes/categoryRoute.js';
 import doctorRouter from './routes/doctorRoute.js';
 // import Category from './models/category.js';
-import Doctor from './models/doctor.js';
+// import Doctor from './models/doctor.js';
 // import { categories } from './data/index.js';
-import { doctors } from './data/index.js';
+// import { doctors } from './data/index.js';
 import dotenv from 'dotenv';
 dotenv.config()
 
@@ -28,7 +28,7 @@ mongoose
 
        // ADD ONLY ONE TIME WHILE FEEDING MONGODB DATA //
         // Category.insertMany(categories);
-        Doctor.insertMany(doctors);
+        // Doctor.insertMany(doctors);
     })
   )
   .catch((err) => {
